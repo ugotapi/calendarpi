@@ -3,12 +3,10 @@ ifconfig
 # Ask the user for info
 read -p 'What is your ip address in a url - http://10.10.10.10 ' webvar
 read -p 'What password to use for the wordpress user wpuser: ' passvar
-read -p 'What Office365 ics calendar link: ' o365cal
 
 
 echo local ip address of your pi: $webvar
 echo wordpress database password: $passvar
-echo Office365 ics calendar url: $o365cal
 
 while true; do
     read -p "Is the above info correct? " yn
