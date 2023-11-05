@@ -1,1 +1,34 @@
 # calendarpi
+
+These are shell scripts to turn a Raspberry pi device into your calendar displayed on a large screen TV.
+
+Using Raspbian Bookworm based 64-bit OS on the pi4 8GB device.
+Use Python, Powershell, Chromium, WordPress, ICS Calendar an excellent Wordpress plugin and Wordpress plugin fullwidth-templates
+ICS Calendar will download a Shared mailbox's calendar (free in Office 365 with other paid accounts)
+ adn display it on yourf TV full screeen. 
+ 
+ Youtube walkthrough: 
+
+This involves using Raspbian on a Raspberry Pi. The device is then modified to behave as digital signage. Nothing but the content is displayed on the screen. Also there is no kiosk service to pay for. It’s Raspbian so it’s secure and doesn’t drop out of being maintained quickly like the other Pi based digital signage setups might.
+
+Hardware Items you will need at least:
+
+Raspberry Pi4 device with 8GB of RAM.
+MicroSD card for the Pi operating system recommend at least 16GB
+Pi power supply
+HDMI cable
+Pi4 case
+USB keyboard and mouse. This will only be used for initial setup.
+4K TV with HDMI port - This is your TV mounted on the wall.
+Raspbian OS with desktop 64-bit image downloaded
+An Office 365 account with a shared calendar shared publicly via an ics file. The ICS Calendar Wordpress plugin will display this ics file. 
+
+
+Passwords: I would recommend a long password on the Office365 Limited user account. That user account cannot have MFA set on it. I would also recommend to use a separate long password for the regular sudo user account. Then for all the MariaDB and WordPress accounts I'd make it the same as the regular account just to keep it simple. You won't have multiple users in this setup.
+
+What you get: Pi4 device that shows a monthly calendar on the TV. When the calendar file is changed in Office365, it will show on the TV after it syncs. 
+
+Note: This update can take more than 24 hours, although updates should happen approximately every 6 hours.
+[
+](https://support.microsoft.com/en-au/office/import-or-subscribe-to-a-calendar-in-outlook-on-the-web-503ffaf6-7b86-44fe-8dd6-8099d95f38df)https://support.microsoft.com/en-au/office/import-or-subscribe-to-a-calendar-in-outlook-on-the-web-503ffaf6-7b86-44fe-8dd6-8099d95f38df
+
