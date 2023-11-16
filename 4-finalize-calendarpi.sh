@@ -9,6 +9,9 @@ sudo mv wp-cli.phar /usr/local/bin/wp
 cd /var/www/html
 sudo wp plugin install --activate "fullwidth-templates" --allow-root
 sudo wp plugin install --activate "ics-calendar" --allow-root
+sudo wp plugin install --activate "insert-php-code-snippet" --allow-root
+sudo wp plugin activate twentytwentythree --allow-root
+
 
 #fix wordpress folder permissions
 sudo chown www-data:www-data /var/www/html/wp-content/upgrade/
