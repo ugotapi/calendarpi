@@ -1,4 +1,4 @@
-<?php
+
 // Create a new DateTime object
 $date1 = new DateTime();
 
