@@ -10,7 +10,7 @@ cd /var/www/html
 sudo wp plugin install --activate "fullwidth-templates" --allow-root
 sudo wp plugin install --activate "ics-calendar" --allow-root
 sudo wp plugin install --activate "insert-php-code-snippet" --allow-root
-sudo wp plugin activate twentytwentythree --allow-root
+sudo wp theme activate twentytwentythree --allow-root
 
 
 #fix wordpress folder permissions
