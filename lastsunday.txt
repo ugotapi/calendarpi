@@ -3,7 +3,7 @@
 $date1 = new DateTime();
 
 // Modify the date it contains
-$date1->modify('last sunday');
+$date1->modify('sunday');
 
 $ts = $date1->format('Ymd');
 
