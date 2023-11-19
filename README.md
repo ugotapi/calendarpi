@@ -13,15 +13,15 @@ This involves using Raspbian on a Raspberry Pi. The device is then modified to b
 
 Hardware Items you will need at least:
 
-Raspberry Pi4 device with 8GB of RAM.
-MicroSD card for the Pi operating system recommend at least 16GB
-Pi power supply
-HDMI cable
-Pi4 case
-USB keyboard and mouse. This will only be used for initial setup.
-4K TV with HDMI port - This is your TV mounted on the wall.
-Raspbian OS with desktop 64-bit image downloaded
-An Office 365 account with a shared calendar shared publicly via an ics file. The ICS Calendar Wordpress plugin will display this ics file. 
+1. Raspberry Pi4 device with 8GB of RAM.
+2. MicroSD card for the Pi operating system recommend at least 16GB
+3. Pi power supply
+4. HDMI cable
+5. Pi4 case
+6. USB keyboard and mouse. This will only be used for initial setup.
+7. 4K TV with HDMI port - This is your TV mounted on the wall.
+8. Raspbian OS with desktop 64-bit image downloaded
+9. A Gmail accoiunt with a shared public ics file or An Office 365 account with a shared calendar shared publicly via an ics file. The ICS Calendar Wordpress plugin will display this ics file. 
 
 
 Passwords: I would recommend a long password on the Office365 Limited user account. That user account cannot have MFA set on it. I would also recommend to use a separate long password for the regular sudo user account. Then for all the MariaDB and WordPress accounts I'd make it the same as the regular account just to keep it simple. You won't have multiple users in this setup.
