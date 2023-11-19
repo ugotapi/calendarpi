@@ -24,11 +24,11 @@ Hardware Items you will need at least:
 9. A Gmail accoiunt with a shared public ics file or An Office 365 account with a shared calendar shared publicly via an ics file. The ICS Calendar Wordpress plugin will display this ics file. 
 
 
-Passwords: I would recommend a long password on the Office365 Limited user account. That user account cannot have MFA set on it. I would also recommend to use a separate long password for the regular sudo user account. Then for all the MariaDB and WordPress accounts I'd make it the same as the regular account just to keep it simple. You won't have multiple users in this setup.
+Passwords: I would recommend to use a long password for the regular sudo user account. Then for all the MariaDB and WordPress accounts I'd make it the same as the regular account just to keep the setup simple. You won't have multiple users in this setup.
 
 What you get: Pi4 device that shows a monthly calendar on the TV. When the calendar file is changed in Office365, it will show on the TV after it syncs. 
 
-Note: This update can take more than 24 hours, although updates should happen approximately every 6 hours.
+Note: This update can take more than 24 hours, although updates should happen approximately every few hours.
 [
 ](https://support.microsoft.com/en-au/office/import-or-subscribe-to-a-calendar-in-outlook-on-the-web-503ffaf6-7b86-44fe-8dd6-8099d95f38df)https://support.microsoft.com/en-au/office/import-or-subscribe-to-a-calendar-in-outlook-on-the-web-503ffaf6-7b86-44fe-8dd6-8099d95f38df
 
