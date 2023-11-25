@@ -2,6 +2,9 @@
 
 These are shell scripts to turn a Raspberry pi device into your calendar displayed on a large screen TV.
 
+![2023-11-25-102340_3840x2160_scrot](https://github.com/ugotapi/calendarpi/assets/14945441/3bb2ed93-9b3b-4061-8a16-561fea78e0e7)
+
+
 
 Using Raspbian Bookworm based 64-bit OS on the pi4 8GB device.
 Use Python, Powershell, Chromium, WordPress, ICS Calendar an excellent Wordpress plugin and Wordpress plugin fullwidth-template
