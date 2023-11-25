@@ -9,7 +9,7 @@ Screenshot:
 
 Using Raspbian Bookworm based 64-bit OS on the pi4 8GB device.
 We use Python, Powershell, Chromium, WordPress, ICS Calendar and fullwidth-template WordPress plugins. ICS Calendar will download a shared mailbox's calendar (free in Office 365 with other paid accounts) or free in Google free calendar with a gmail account and display it on your TV full screen. I use the free version of ICS Calendar, but there are many great options for displaying a calendar here. [
-](https://icscalendar.com/product/ics-calendar-pro)https://icscalendar.com/product/ics-calendar-pro.
+](https://icscalendar.com/#features)https://icscalendar.com/#features
 I am not affiliated with ICS Calendar. 
  
 Youtube walkthrough: 
