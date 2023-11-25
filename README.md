@@ -6,8 +6,9 @@ These are shell scripts to turn a Raspberry pi device into your calendar display
 Using Raspbian Bookworm based 64-bit OS on the pi4 8GB device.
 Use Python, Powershell, Chromium, WordPress, ICS Calendar an excellent Wordpress plugin and Wordpress plugin fullwidth-template
 ICS Calendar will download a Shared mailbox's calendar (free in Office 365 with other paid accounts) or free in Google free calendar with a gmail account
-and display it on your TV full screeen using ICS Calendar plugin in WordPress. I use the freee version of ICS Calendar, but there are great options for displaying a calendar here. [
-](https://icscalendar.com/product/ics-calendar-pro)https://icscalendar.com/product/ics-calendar-pro
+and display it on your TV full screeen using ICS Calendar plugin in WordPress. I use the free version of ICS Calendar, but there are many great options for displaying a calendar here. [
+](https://icscalendar.com/product/ics-calendar-pro)https://icscalendar.com/product/ics-calendar-pro.
+I am not affiliated with ICS Calendar. 
  
  Youtube walkthrough: 
 
