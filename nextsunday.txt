@@ -5,9 +5,9 @@ $date1 = new DateTime();
 // Modify the date it contains
 $date1->modify('next sunday');
 
-$ns = $date1->format('Ymd');
+$ns1 = $date1->format('Ymd');
 
-$nextsunday = '[ics_calendar  url="https://calendar.google.com/calendar/ical/yourgmailaddressgoeshere%40gmail.com/public/basic.ics" view="week" title="false" startdate="' . $ns . '" limitdays="7" legendstyle="none" hidealldayindicator="true"]';
+$nextsunday = '[ics_calendar  url="https://calendar.google.com/calendar/ical/yourgmailaddressgoeshere%40gmail.com/public/basic.ics" view="week" title="false" startdate="' . $ns1 . '" limitdays="7" legendstyle="none" hidealldayindicator="true"]';
 
 // Output
 echo do_shortcode($nextsunday);
