@@ -1,16 +1,15 @@
-
+<?php
 // Create a new DateTime object
 $date1 = new DateTime();
 
 // Modify the date it contains
-$date1->modify('sunday');
+$date1->modify('last Sunday');
 
 $ts = $date1->format('Ymd');
 
-$thissunday = '[ics_calendar  url="https://calendar.google.com/calendar/ical/yourgmailaddresshere%40gmail.com/public/basic.ics" view="week" title="false" startdate="' . $ts . '" limitdays="7" legendstyle="none" hidealldayindicator="true"]';
+$thissunday = '[ics_calendar  url="https://calendar.google.com/calendar/ical/mikesmithiceicebaby%40gmail.com/public/basic.ics" view="week" title="false" startdate="' . $ts . '" limitdays="7" legendstyle="none" hidealldayindicator="true"]';
 
 // Output
 echo do_shortcode($thissunday);
 
 ?>
-
