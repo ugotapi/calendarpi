@@ -2,6 +2,7 @@
 
 These are shell scripts to turn a Raspberry pi device into your calendar displayed on a large screen TV.
 
+Screenshot:
 ![2023-11-25-102340_3840x2160_scrot](https://github.com/ugotapi/calendarpi/assets/14945441/3bb2ed93-9b3b-4061-8a16-561fea78e0e7)
 
 
