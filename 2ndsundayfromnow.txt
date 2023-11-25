@@ -1,4 +1,3 @@
-
 // Create a new DateTime object
 $date2 = new DateTime();
 
