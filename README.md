@@ -1,22 +1,19 @@
 # calendarpi
 
+This involves using Raspbian on a Raspberry Pi. The device is then modified to behave as digital signage. Nothing but the content is displayed on the screen. Also there is no kiosk service to pay for. It’s Raspbian so it’s secure and doesn’t drop out of being maintained quickly like the other Pi based digital signage setups might.
+
 These are shell scripts to turn a Raspberry pi device into your calendar displayed on a large screen TV.
 
 Screenshot:
 ![2023-11-25-102340_3840x2160_scrot](https://github.com/ugotapi/calendarpi/assets/14945441/3bb2ed93-9b3b-4061-8a16-561fea78e0e7)
 
-
-
 Using Raspbian Bookworm based 64-bit OS on the pi4 8GB device.
-Use Python, Powershell, Chromium, WordPress, ICS Calendar an excellent Wordpress plugin and Wordpress plugin fullwidth-template
-ICS Calendar will download a Shared mailbox's calendar (free in Office 365 with other paid accounts) or free in Google free calendar with a gmail account
-and display it on your TV full screeen using ICS Calendar plugin in WordPress. I use the free version of ICS Calendar, but there are many great options for displaying a calendar here. [
+We use Python, Powershell, Chromium, WordPress, ICS Calendar and fullwidth-template WordPress plugins. ICS Calendar will download a shared mailbox's calendar (free in Office 365 with other paid accounts) or free in Google free calendar with a gmail account and display it on your TV full screen. I use the free version of ICS Calendar, but there are many great options for displaying a calendar here. [
 ](https://icscalendar.com/product/ics-calendar-pro)https://icscalendar.com/product/ics-calendar-pro.
 I am not affiliated with ICS Calendar. 
  
- Youtube walkthrough: 
+Youtube walkthrough: 
 
-This involves using Raspbian on a Raspberry Pi. The device is then modified to behave as digital signage. Nothing but the content is displayed on the screen. Also there is no kiosk service to pay for. It’s Raspbian so it’s secure and doesn’t drop out of being maintained quickly like the other Pi based digital signage setups might.
 
 Hardware Items you will need at least:
 
@@ -28,10 +25,10 @@ Hardware Items you will need at least:
 6. USB keyboard and mouse. This will only be used for initial setup.
 7. 4K TV with HDMI port - This is your TV mounted on the wall.
 8. Raspbian OS with desktop 64-bit image downloaded
-9. A Gmail accoiunt with a shared public ics file or An Office 365 account with a shared calendar shared publicly via an ics file. The ICS Calendar Wordpress plugin will display this ics file. 
+9. A Gmail account with a shared public ics file or An Office 365 account with a shared calendar shared publicly via an ics file.
 
 
-Passwords: I would recommend to use a long password for the regular sudo user account. Then for all the MariaDB and WordPress accounts I'd make it the same as the regular account just to keep the setup simple. You won't have multiple users in this setup.
+Passwords: I would recommend to use a long password for the regular sudo user account. Then for all the MariaDB and WordPress accounts I'd make it the same as the regular account just to keep the setup simple. You won't have multiple admin users in this setup.
 
 What you get: Pi4 device that shows a monthly calendar on the TV. When the calendar file is changed in Office365, it will show on the TV after it syncs. 
 
