@@ -1,0 +1,15 @@
+<?php
+// Create a new DateTime object
+$date2 = new DateTime();
+
+// Modify the date it contains
+$date2->modify('1 weeks sunday');
+
+$ns2 = $date2->format('Ymd');
+
+$nextsunday2 = '[ics_calendar  url="https://calendar.google.com/calendar/ical/mikesmithiceicebaby%40gmail.com/public/basic.ics" view="week" title="false" startdate="' . $ns2 . '" limitdays="7" legendstyle="none" hidealldayindicator="true"]';
+
+// Output
+echo do_shortcode($nextsunday2);
+
+?>
