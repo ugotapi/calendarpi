@@ -1,13 +1,25 @@
 
-// Create a new DateTime object
-$date1 = new DateTime();
+// Get the current day of the week (0 = Sunday, 1 = Monday, ..., 6 = Saturday)
+$currentDayOfWeek = date('w');
 
-// Modify the date it contains
-$date1->modify('next sunday');
+if ($currentDayOfWeek == 0) {
+    // If today is Sunday, calculate the date of the next Sunday
+    $daysUntilNextSunday = 7;
+    $nextSunday = date('Ymd', strtotime("+$daysUntilNextSunday days"));
 
-$ns1 = $date1->format('Ymd');
+    $resultDate = $nextSunday;
+} else {
+    // If it's not Sunday, calculate the date of the upcoming Sunday
+    $daysUntilNextWeekSunday = 7 - $currentDayOfWeek;
+    $nextWeekSunday = date('Ymd', strtotime("+$daysUntilNextWeekSunday days"));
 
-$nextsunday = '[ics_calendar  url="https://calendar.google.com/calendar/ical/yourgmailaddressgoeshere%40gmail.com/public/basic.ics" view="week" title="false" startdate="' . $ns1 . '" limitdays="7" legendstyle="none" hidealldayindicator="true"]';
+    $resultDate = $nextWeekSunday;
+}
+
+
+
+
+$nextsunday = '[ics_calendar  url="https://calendar.google.com/calendar/ical/yourgmailaddressgoeshere%40gmail.com/public/basic.ics" view="week" title="false" startdate="' . $resultDate . '" limitdays="7" legendstyle="none" hidealldayindicator="true"]';
 
 // Output
 echo do_shortcode($nextsunday);
