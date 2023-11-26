@@ -6,7 +6,7 @@ $date2->modify('1 weeks sunday');
 
 $ns2 = $date2->format('Ymd');
 
-$nextsunday2 = '[ics_calendar  url="https://calendar.google.com/calendar/ical/mikesmithiceicebaby%40gmail.com/public/basic.ics" view="week" title="false" startdate="' . $ns2 . '" limitdays="7" legendstyle="none" hidealldayindicator="true"]';
+$nextsunday2 = '[ics_calendar  url="https://calendar.google.com/calendar/ical/yourgmailaccount%40gmail.com/public/basic.ics" view="week" title="false" startdate="' . $ns2 . '" limitdays="7" legendstyle="none" hidealldayindicator="true"]';
 
 // Output
 echo do_shortcode($nextsunday2);
