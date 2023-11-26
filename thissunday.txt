@@ -1,15 +1,19 @@
-<?php
-// Create a new DateTime object
-$date1 = new DateTime();
+// Get the current day of the week (0 = Sunday, 1 = Monday, ..., 6 = Saturday)
+$currentDayOfWeek = date('w');
 
-// Modify the date it contains
-$date1->modify('this Sunday');
+if ($currentDayOfWeek == 0) {
+    // If today is Sunday, display the current date in Ymd format
+    $resultDate = date('Ymd');
+} else {
+    // If it's not Sunday, calculate the date of the previous Sunday
+    $daysSinceSunday = $currentDayOfWeek;
+    $previousSunday = date('Ymd', strtotime("-$daysSinceSunday days"));
 
-$ts = $date1->format('Ymd');
+    $resultDate = $previousSunday;
+}
 
-$thissunday = '[ics_calendar  url="https://calendar.google.com/calendar/ical/myourgmailaccount%40gmail.com/public/basic.ics" view="week" title="false" startdate="' . $ts . '" limitdays="7" legendstyle="none" hidealldayindicator="true"]';
+
+$thissunday = '[ics_calendar  url="https://calendar.google.com/calendar/ical/yourgmailaccount%40gmail.com/public/basic.ics" view="week" title="false" startdate="' . $resultDate . '" limitdays="7" legendstyle="none" hidealldayindicator="true"]';
 
 // Output
 echo do_shortcode($thissunday);
-
-?>
