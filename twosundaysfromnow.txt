@@ -10,6 +10,32 @@ $nextSunday = date('Ymd', strtotime("+$daysUntilNextSunday days"));
 // Calculate the date of two Sundays from now
 $twoSundaysFromNow = date('Ymd', strtotime("$nextSunday +14 days"));
 
+
+
+// Calculate the date of the next Sunday
+$nextSunday = date('Ymd', strtotime("+$daysUntilNextSunday days"));
+
+// Calculate two Sundays from now
+$twoSundaysFromNow1 = date('Ymd', strtotime("$nextSunday +7 days"));
+$twoSundaysFromNow2 = date('Ymd', strtotime("$nextSunday +14 days"));
+
+// Display the results
+echo "Current Date: $currentDate\n";
+echo "Next Sunday: $nextSunday\n";
+echo "Two Sundays from now (1): $twoSundaysFromNow1\n";
+echo "Two Sundays from now (2): $twoSundaysFromNow2\n";
+
+?>
+
+
+
+
+
+
+
+
+
+
 $nextsunday2 = '[ics_calendar  url="https://calendar.google.com/calendar/ical/yourgmailaccount%40gmail.com/public/basic.ics" view="week" title="false" startdate="' . $twoSundaysFromNow . '" limitdays="7" legendstyle="none" hidealldayindicator="true"]';
 
 // Output
