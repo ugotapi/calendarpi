@@ -24,19 +24,10 @@ if (array_key_exists($dayOfWeek, $daysToAdd)) {
 }
 
 
-$thissunday = '[ics_calendar url="https://calendar.google.com/calendar/ical/yourgmail%40gmail.com/public/basic.ics" view="week" title="false" startdate="' . $futureDate . '" limitdays="7" legendstyle="none" hidealldayindicator="true"]';
+$thissunday = '[ics_calendar url="https://calendar.google.com/calendar/ical/mikesmithiceicebaby%40gmail.com/public/basic.ics" view="week" title="false" startdate="' . $futureDate . '" limitdays="7" legendstyle="none" hidealldayindicator="true"]';
 
 // Output
 echo do_shortcode($thissunday);
 
-
-
-?>
-
-
-$nextsunday = '[ics_calendar  url="https://calendar.google.com/calendar/ical/yourgmailaddressgoeshere%40gmail.com/public/basic.ics" view="week" title="false" startdate="' . $resultDate . '" limitdays="7" legendstyle="none" hidealldayindicator="true"]';
-
-// Output
-echo do_shortcode($nextsunday);
 
 ?>
