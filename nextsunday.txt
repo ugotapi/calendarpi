@@ -1,22 +1,37 @@
+<?php
 
-// Get the current day of the week (0 = Sunday, 1 = Monday, ..., 6 = Saturday)
-$currentDayOfWeek = date('w');
+$dayOfWeek = date('l');
+$daysToAdd = array(
+    'Sunday' => 7,
+	'Monday' => 6,
+    'Tuesday' => 5,
+    'Wednesday' => 4,
+	'Thursday' => 3,
+	'Friday' => 2,
+	'Saturday' => 1
+	
+);
 
-if ($currentDayOfWeek == 0) {
-    // If today is Sunday, calculate the date of the next Sunday
-    $daysUntilNextSunday = 7;
-    $nextSunday = date('Ymd', strtotime("+$daysUntilNextSunday days"));
+if (array_key_exists($dayOfWeek, $daysToAdd)) {
+    $daysToAdd = $daysToAdd[$dayOfWeek];
 
-    $resultDate = $nextSunday;
+  
+    $currentDate = date('Ymd');
+    $futureDate = date('Ymd', strtotime($currentDate . '+' . $daysToAdd . ' days'));
+
 } else {
-    // If it's not Sunday, calculate the date of the upcoming Sunday
-    $daysUntilNextWeekSunday = 7 - $currentDayOfWeek;
-    $nextWeekSunday = date('Ymd', strtotime("+$daysUntilNextWeekSunday days"));
-
-    $resultDate = $nextWeekSunday;
+    echo "Invalid day of the week";
 }
 
 
+$thissunday = '[ics_calendar url="https://calendar.google.com/calendar/ical/yourgmail%40gmail.com/public/basic.ics" view="week" title="false" startdate="' . $futureDate . '" limitdays="7" legendstyle="none" hidealldayindicator="true"]';
+
+// Output
+echo do_shortcode($thissunday);
+
+
+
+?>
 
 
 $nextsunday = '[ics_calendar  url="https://calendar.google.com/calendar/ical/yourgmailaddressgoeshere%40gmail.com/public/basic.ics" view="week" title="false" startdate="' . $resultDate . '" limitdays="7" legendstyle="none" hidealldayindicator="true"]';
