@@ -1,44 +1,35 @@
-// Get the current day of the week (0 = Sunday, 1 = Monday, ..., 6 = Saturday)
-$currentDayOfWeek = date('w');
+<?php
 
-// Calculate the number of days until the next Sunday
-$daysUntilNextSunday = (7 - $currentDayOfWeek) % 7;
+$dayOfWeek = date('l');
+$daysToAdd = array(
+    'Sunday' => 14,
+	'Monday' => 13,
+    'Tuesday' => 12,
+    'Wednesday' => 11,
+	'Thursday' => 10,
+	'Friday' => 9,
+	'Saturday' => 8
+	
+);
 
-// Calculate the date of the next Sunday
-$nextSunday = date('Ymd', strtotime("+$daysUntilNextSunday days"));
+if (array_key_exists($dayOfWeek, $daysToAdd)) {
+    $daysToAdd = $daysToAdd[$dayOfWeek];
 
-// Calculate the date of two Sundays from now
-$twoSundaysFromNow = date('Ymd', strtotime("$nextSunday +14 days"));
+  
+    $currentDate = date('Ymd');
+    $futureDate = date('Ymd', strtotime($currentDate . '+' . $daysToAdd . ' days'));
 
-
-
-// Calculate the date of the next Sunday
-$nextSunday = date('Ymd', strtotime("+$daysUntilNextSunday days"));
-
-// Calculate two Sundays from now
-$twoSundaysFromNow1 = date('Ymd', strtotime("$nextSunday +7 days"));
-$twoSundaysFromNow2 = date('Ymd', strtotime("$nextSunday +14 days"));
-
-// Display the results
-echo "Current Date: $currentDate\n";
-echo "Next Sunday: $nextSunday\n";
-echo "Two Sundays from now (1): $twoSundaysFromNow1\n";
-echo "Two Sundays from now (2): $twoSundaysFromNow2\n";
-
-?>
+ echo $futureDate;
+} else {
+    echo "Invalid day of the week";
+}
 
 
-
-
-
-
-
-
-
-
-$nextsunday2 = '[ics_calendar  url="https://calendar.google.com/calendar/ical/yourgmailaccount%40gmail.com/public/basic.ics" view="week" title="false" startdate="' . $twoSundaysFromNow . '" limitdays="7" legendstyle="none" hidealldayindicator="true"]';
+$thissunday = '[ics_calendar url="https://calendar.google.com/calendar/ical/yourgmail%40gmail.com/public/basic.ics" view="week" title="false" startdate="' . $futureDate . '" limitdays="7" legendstyle="none" hidealldayindicator="true"]';
 
 // Output
-echo do_shortcode($nextsunday2);
+echo do_shortcode($thissunday);
+
+
 
 ?>
