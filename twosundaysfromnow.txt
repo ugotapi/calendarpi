@@ -19,7 +19,6 @@ if (array_key_exists($dayOfWeek, $daysToAdd)) {
     $currentDate = date('Ymd');
     $futureDate = date('Ymd', strtotime($currentDate . '+' . $daysToAdd . ' days'));
 
- echo $futureDate;
 } else {
     echo "Invalid day of the week";
 }
