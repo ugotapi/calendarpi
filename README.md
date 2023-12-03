@@ -12,8 +12,8 @@ We use Chromium, WordPress, ICS Calendar and fullwidth-template WordPress plugin
 ](https://icscalendar.com/#features)https://icscalendar.com/#features
 I am not affiliated with ICS Calendar. 
  
-Youtube walkthrough: 
-
+Youtube walkthrough: [
+](https://youtu.be/SXkD7krBZ-o)
 
 Hardware Items you will need at least:
 
