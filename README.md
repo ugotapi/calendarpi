@@ -1,6 +1,6 @@
 # calendarpi
 
-This involves using Raspbian on a Raspberry Pi. The device is then modified to behave as digital signage. Nothing but the content is displayed on the screen. Also there is no kiosk service to pay for. It’s Raspbian so it’s secure and doesn’t drop out of being maintained quickly like the other Pi based digital signage setups might.
+This involves Showing a custom calendar on a TV using Raspbian on a Raspberry Pi. The device is then modified to behave as digital signage. Nothing but the content is displayed on the screen. Also there is no kiosk service to pay for. It’s Raspbian so it’s secure and doesn’t drop out of being maintained quickly like the other Pi based digital signage setups might.
 
 These are shell scripts to turn a Raspberry pi device into your calendar displayed on a large screen TV.
 
