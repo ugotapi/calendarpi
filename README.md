@@ -33,7 +33,7 @@ Passwords: I would recommend to use a long password for the regular sudo user ac
 
 What you get: Pi4 device that shows a monthly calendar on the TV. When the calendar file is changed in Office365, it will show on the TV after it syncs. 
 
-Note: This update can take more than 24 hours, although updates should happen approximately every few hours.
+Note: In Office 365 changes to the online calendar showing on the TV can take more than 24 hours, although I usually see updates happening every few hours.
 [
 ](https://support.microsoft.com/en-au/office/import-or-subscribe-to-a-calendar-in-outlook-on-the-web-503ffaf6-7b86-44fe-8dd6-8099d95f38df)https://support.microsoft.com/en-au/office/import-or-subscribe-to-a-calendar-in-outlook-on-the-web-503ffaf6-7b86-44fe-8dd6-8099d95f38df
 
