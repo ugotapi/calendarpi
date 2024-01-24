@@ -1,13 +1,13 @@
 # calendarpi
 
-This involves showing a custom calendar on a TV using Raspbian on a Raspberry Pi. The device is then modified to behave as digital signage. Nothing but the content is displayed on the screen. Also there is no kiosk service to pay for. It’s Raspbian so it’s secure and doesn’t drop out of being maintained quickly like the other Pi based digital signage setups might.
+This involves showing a custom calendar on a TV using Raspberry Pi OS on a Raspberry Pi. The device is then modified to behave as digital signage. Nothing but the content is displayed on the screen. Also there is no kiosk service to pay for. It’s Raspbian so it’s secure and doesn’t drop out of being maintained quickly like the other Pi based digital signage setups might.
 
 These are shell scripts to turn a Raspberry pi device into your calendar displayed on a large screen TV.
 
 Screenshot:
 ![2023-11-25-102340_3840x2160_scrot](https://github.com/ugotapi/calendarpi/assets/14945441/3bb2ed93-9b3b-4061-8a16-561fea78e0e7)
 
-Using Raspbian Bookworm based 64-bit OS on the pi4 8GB device.
+Using Raspberry Pi OS Bookworm based 64-bit OS on the pi4 8GB device.
 We use Chromium, WordPress, ICS Calendar and fullwidth-template WordPress plugins. ICS Calendar will download a shared mailbox's calendar (free in Office 365 with other paid accounts) or free in Google free calendar with a gmail account and display it on your TV full screen. I use the free version of ICS Calendar, but there are many great options for displaying a calendar here. [
 ](https://icscalendar.com/#features)https://icscalendar.com/#features
 I am not affiliated with ICS Calendar. 
@@ -25,7 +25,7 @@ Hardware Items you will need at least:
 5. Pi4 case
 6. USB keyboard and mouse. This will only be used for initial setup.
 7. 4K TV with HDMI port - This is your TV mounted on the wall.
-8. Raspbian OS with desktop 64-bit image downloaded
+8. Raspberry PI OS with desktop 64-bit image downloaded
 9. A Gmail account with a shared public ics file or An Office 365 account with a shared calendar shared publicly via an ics file.
 
 
