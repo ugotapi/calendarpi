@@ -24,6 +24,7 @@ sudo systemctl enable ssh
 sudo systemctl start ssh
 cd ~
 sudo apt update
+sudo apt upgrade -y
 
 #re-enable X display server vs new Wayland. Becuse old tools for X dont work in Wayland. 
 sudo sed -i "s/greeter-session=pi-greeter-wayfire/greeter-session=pi-greeter/" /etc/lightdm/lightdm.conf
