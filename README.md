@@ -28,6 +28,7 @@ Hardware Items you will need at least:
 8. Raspberry PI OS with desktop 64-bit image downloaded
 9. A Gmail account with a shared public ics file or An Office 365 account with a shared calendar shared publicly via an ics file.
 
+This should work on a Pi5 device also.
 
 Passwords: I would recommend to use a long password for the regular sudo user account. Then for all the MariaDB and WordPress accounts I'd make it the same as the regular account just to keep the setup simple. You won't have multiple admin users in this setup.
 
